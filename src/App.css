@@ -36,3 +36,47 @@
     transform: rotate(360deg);
   }
 }
+
+.poster {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 600px;
+  position:absolute;
+  right: 10%;
+  background-color: black;
+  color:aliceblue;
+  font-size: smaller;
+}
+
+.top {
+  display: flex;
+  flex: row;
+  justify-content: center;
+  
+}
+
+.top div {
+  margin: 50px;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;  
+}
+
+.middle {
+  display: flex;
+  flex-direction: row;
+  margin-top:100px;
+}
+.middle div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+  margin-right: 25px;
+
+}
+

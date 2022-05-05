@@ -1,23 +1,48 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="poster">
+        <div className="top">
+          <div className="actor">
+            <p>NAME</p>
+            <p>SURNAME</p>
+          </div>
+          <div className="actor">
+            <p>NAME</p>
+            <p>SURNAME</p>
+          </div>
+          <div className="actor">
+            <p>NAME</p>
+            <p>SURNAME</p>
+          </div>
+        </div>
+        <p>TAGLINE</p>
+        <div className="middle">
+          
+          <div>
+            <q>CRITIQUE</q>
+            <p>CRITIC, PUBLICATION</p>
+            <q>CRITIQUE</q>
+            <p>CRITIC, PUBLICATION</p>
+          </div>
+          <div>
+            <h4>FROM THE DIRECTOR OF</h4>
+            <h3>A FILM</h3>
+          </div>
+          <div>
+            <q>CRITIQUE</q>
+            <p>CRITIC, PUBLICATION</p>
+            <q>CRITIQUE</q>
+            <p>CRITIC, PUBLICATION</p>
+          </div>
+        </div>
+        <h1>THE TITLE</h1>
+        
+        
+      </div>
     </div>
   );
 }
