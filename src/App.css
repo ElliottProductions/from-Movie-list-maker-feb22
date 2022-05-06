@@ -1,7 +1,20 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: row;
 }
 
+.left {
+  margin-right: 100px;
+}
+.right {
+  display: flex;
+  flex-direction: row;
+}
+.serp {
+  display: flex;
+  flex-direction: column;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -50,6 +63,7 @@
   color:aliceblue;
   font-size: smaller;
   font-family:Arial, Helvetica, sans-serif;
+  margin: 20px;
 }
 
 

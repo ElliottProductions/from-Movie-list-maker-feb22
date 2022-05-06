@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Movie(props) {
   return (
-    <div className="poster" style={{ backgroundImage: `url(${props.movie.colorThemeID})` }}> 
+    <div className="poster" style={{ backgroundImage: `url(${props.movie.colorThemeID})` }} onClick={() => props.handleDeleteMovie && props.handleDeleteMovie(props.movie.movieTitle)}> 
       <div className="top">
         <div className="actor">
           <p>NAME</p>
