@@ -1,48 +1,28 @@
 import { useState } from 'react';
 import './App.css';
+import Movie from './Movie';
+import MovieForm from './MovieForm';
 
 function App() {
+  const [movieTitle, setMovieTitle] = useState('THE TITLE');
+  const [fromDirectorOf, setFromDirectorOf] = useState('A FILM');
+  const [fromProducerOf, setFromProducerOf] = useState('OTHER FILM');
+  const [tagline, setTagline] = useState('SOME TAGLINE');
+  const [colorThemeID, setColorThemeID] = useState('poster-1.PNG');
+
   return (
     <div className="App">
-      <div className="poster">
-        <div className="top">
-          <div className="actor">
-            <p>NAME</p>
-            <p>SURNAME</p>
-          </div>
-          <div className="actor">
-            <p>NAME</p>
-            <p>SURNAME</p>
-          </div>
-          <div className="actor">
-            <p>NAME</p>
-            <p>SURNAME</p>
-          </div>
-        </div>
-        <p>TAGLINE</p>
-        <div className="middle">
-          
-          <div>
-            <q>CRITIQUE</q>
-            <p>CRITIC, PUBLICATION</p>
-            <q>CRITIQUE</q>
-            <p>CRITIC, PUBLICATION</p>
-          </div>
-          <div>
-            <h4>FROM THE DIRECTOR OF</h4>
-            <h3>A FILM</h3>
-          </div>
-          <div>
-            <q>CRITIQUE</q>
-            <p>CRITIC, PUBLICATION</p>
-            <q>CRITIQUE</q>
-            <p>CRITIC, PUBLICATION</p>
-          </div>
-        </div>
-        <h1>THE TITLE</h1>
-        
-        
-      </div>
+      <Movie movieTitle={movieTitle} fromDirectorOf={fromDirectorOf} fromProducerOf={fromProducerOf}
+        tagline={tagline} colorThemeID={colorThemeID}/>
+      <MovieForm movieTitle={movieTitle} setMovieTitle={setMovieTitle} fromDirectorOf={fromDirectorOf}
+        setFromDirectorOf={setFromDirectorOf} fromProducerOf={fromProducerOf}
+        setFromProducerOf={setFromProducerOf} tagline={tagline} setTagline={setTagline}
+        colorThemeID={colorThemeID} setColorThemeID={setColorThemeID}/>
+      <br></br>
+      <br></br>
+
+      <br></br>
+      <p>Titlsse:</p><input></input>
     </div>
   );
 }
