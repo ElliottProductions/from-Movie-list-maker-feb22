@@ -75,8 +75,8 @@
 .middle {
   display: flex;
   flex-direction: row;
-  margin-top:25px;
-  margin-bottom: 25px;
+  margin-top:55px;
+  
 }
 .middle div {
   display: flex;

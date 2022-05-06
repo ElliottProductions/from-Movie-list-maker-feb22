@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Movie(props) {
   return (
-    <div className="poster" style={{ backgroundImage: `url(${props.colorThemeID})` }}> 
+    <div className="poster" style={{ backgroundImage: `url(${props.movie.colorThemeID})` }}> 
       <div className="top">
         <div className="actor">
           <p>NAME</p>
@@ -17,7 +17,7 @@ export default function Movie(props) {
           <p>SURNAME</p>
         </div>
       </div>
-      <h3 style={{ color: 'black' }}>{props.tagline}</h3>
+      <h3 style={{ color: 'black' }}>{props.movie.tagline}</h3>
       <div className="middle">
           
         <div>
@@ -27,11 +27,11 @@ export default function Movie(props) {
           <p>CRITIC, PUBLICATION</p>
         </div>
         <div>
-          { props.fromDirectorOf ? <h6>FROM THE DIRECTOR OF</h6> : <br/>}
-          <h4>{props.fromDirectorOf}</h4>
-          { props.fromDirectorOf ? <h6>AND THE PRODUCER OF</h6> : <br/>}
+          { props.movie.fromDirectorOf ? <h6>FROM THE DIRECTOR OF</h6> : <br/>}
+          <h4>{props.movie.fromDirectorOf}</h4>
+          { props.movie.fromProducerOf ? <h6>AND THE PRODUCER OF</h6> : <br/>}
           
-          <h4>{props.fromProducerOf}</h4>
+          <h4>{props.movie.fromProducerOf}</h4>
         </div>
         <div>
           <q>CRITIQUE</q>
@@ -40,7 +40,7 @@ export default function Movie(props) {
           <p>CRITIC, PUBLICATION</p>
         </div>
       </div>
-      <h1>{props.movieTitle}</h1>
+      <h1>{props.movie.movieTitle}</h1>
         
         
     </div>
